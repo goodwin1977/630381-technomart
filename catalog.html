@@ -36,8 +36,9 @@
 	            <p class="contacts_address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 	          </div>
 	          <div class="middle-menu_account">
-	                        
-	                        <a class="user" href="#">Равшан Джамшутович</a><br>
+	                        <div class="account-name">
+	                           <a class="user" href="#">Равшан Джамшутович</a>
+                          </div>
 	                        <a class="user-orders" href="#">Мои заказы</a>
 	                        <a class="user-profile" href="#">Личный кабинет</a>
 	            
@@ -77,68 +78,71 @@
         <li>Перфораторы</li>
       </ul>
       <h1 class="calalog-header">Перфораторы</h1>
-      <form class="side-left">
-        <p class="side-topbar">Фильтр:</p>
+        <div class="left-sidebar">
+          <form class="side-left">
+            <p class="side-topbar">Фильтр:</p>
 
-        <section class="price-range">
-          <h3>Цена:</h3>
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar"></div>
-            </div>
-            <div class="toggle min-toggle"></div>
-            <div class="toggle max-toggle"></div>
-          </div>
-          <div class="price-controls">
-            от
-            <input class="min-price" type="text" value="0"> до
-            <input class="max-price" type="text" value="30 000">
-          </div>
-        </section>
+            <section class="price-range">
+              <h3>Цена:</h3>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+              </div>
+              <div class="price-controls">
+                от
+                <input class="min-price" type="text" value="0"> до
+                <input class="max-price" type="text" value="30 000">
+              </div>
+            </section>
 
-        <section class="makers">
-          <h3>Производители:</h3>
-          <div class="multiselect">
-            <div class="checkbox">
-              <input id="check1" class="checkbox" type="checkbox" name="makers" value="" checked="">
-              <label for="check1">Bosh</label>
-            </div>
-            <div class="checkbox">
-              <input id="check2" class="checkbox" type="checkbox" name="makers" value="">
-              <label for="check2">Интерскол</label>
-            </div>
-            <div class="checkbox">
-              <input id="check3" class="checkbox" type="checkbox" name="makers" value="" checked="">
-              <label for="check3">Makita</label>
-            </div>
-            <div class="checkbox">
-              <input id="check4" class="checkbox" type="checkbox" name="makers" value="">
-              <label for="check4">Dewalt</label>
-            </div>
-            <div class="checkbox">
-              <input id="check5" class="checkbox" type="checkbox" name="makers" value="">
-              <label for="check5">Hitachi</label>
-            </div>
-          </div>
-        </section>
+            <section class="makers">
+              <h3>Производители:</h3>
+              <div class="multiselect">
+                <div class="checkbox">
+                  <input id="check1" class="checkbox" type="checkbox" name="makers" value="" checked="">
+                  <label for="check1">Bosh</label>
+                </div>
+                <div class="checkbox">
+                  <input id="check2" class="checkbox" type="checkbox" name="makers" value="">
+                  <label for="check2">Интерскол</label>
+                </div>
+                <div class="checkbox">
+                  <input id="check3" class="checkbox" type="checkbox" name="makers" value="" checked="">
+                  <label for="check3">Makita</label>
+                </div>
+                <div class="checkbox">
+                  <input id="check4" class="checkbox" type="checkbox" name="makers" value="">
+                  <label for="check4">Dewalt</label>
+                </div>
+                <div class="checkbox">
+                  <input id="check5" class="checkbox" type="checkbox" name="makers" value="">
+                  <label for="check5">Hitachi</label>
+                </div>
+              </div>
+            </section>
 
-        <section class="power-type">
-          <h3>Питание:</h3>
-          <div class="radioselect">
-            <div class="radiobutton">
-              <input id="radio1" type="radio" name="power-type" value="" checked="">
-              <label for="radio1">Аккумуляторные</label>
-            </div>
-            <div class="radiobutton">
-              <input id="radio2" type="radio" name="power-type" value="">
-              <label for="radio2">Сетевые</label>
-            </div>
-          </div>
-        </section>
-      </form>
+            <section class="power-type">
+              <h3>Питание:</h3>
+              <div class="radioselect">
+                <div class="radiobutton">
+                  <input id="radio1" type="radio" name="power-type" value="" checked="">
+                  <label for="radio1">Аккумуляторные</label>
+                </div>
+                <div class="radiobutton">
+                  <input id="radio2" type="radio" name="power-type" value="">
+                  <label for="radio2">Сетевые</label>
+                </div>
+              </div>
+            </section>
+          </form>
+        </div>
 
       <div class="side-right">
-        <div class="side-topbar  clearfix">Сортировка:
+        <div class="side-topbar  clearfix">
+          <h2>Сортировка:</h2>
           <ul class="sort-controls">
             <li><span class="sort-option  sort-option--active">По цене</span>
             </li>
@@ -288,7 +292,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="main-footer">
     <div class="upper-footer">
       <div class="container">
         <div id="contacts" class="upper-footer_contacts">
