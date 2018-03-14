@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
   	<header class="main-header">
@@ -38,6 +39,18 @@
 	          <div class="middle-menu_account">
 	            <a class="login" href="#">Войти</a>
 	            <a class="registration" href="#">Регистрация</a>
+
+                  <div class="login-popup">  <!-- попап логин -->
+                      <a href="#" class="login-popup-close">✕</a>
+                      <form class="login-form" action="#" method="post">
+                        <input class="login-field" type="text" name="login" placeholder="Логин">
+                        <input class="password-field" type="password" name="password" placeholder="Пароль">
+                        <a class="restore" href="#">Я забыл пароль</a>
+                        <label>
+                          <input type="checkbox" name="remember"> Запомните меня</label>
+                        <input type="submit" value="Войти">
+                      </form>
+                </div>
 	          </div>
 	        </div>
 
