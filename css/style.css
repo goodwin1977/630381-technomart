@@ -74,6 +74,8 @@ p {
 	background-color: #EE3643;
 	padding: 13px 55px 13px 55px;
 	border-bottom: 4px solid rgba(0, 0, 0, 0.24);
+	
+	
 }
 
 .middle-menu {
@@ -286,4 +288,9 @@ p {
 
 .lower-footer {
 	background-color: #293449;
+}
+
+.logo-footer {
+	position: relative;
+	top: 10px;
 }
