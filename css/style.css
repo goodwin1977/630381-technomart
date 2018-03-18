@@ -236,15 +236,43 @@ p {
 }
 
 .catalog {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 20px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
+.catalog p {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 20px;
+	text-align: center;
+}
+
+.title {
+	margin: 0;
+	padding: 0 30px;
+	color: #000000;
+}
+
+.price-old {
+	color: #a9a9a9;
+	text-decoration: line-through;
+}
+
 .catalog-item {
-	border: 1px solid black;
+	outline: 1px solid black;
 	width: 220px;
 	height: 318px;
+	vertical-align: top;
+}
+
+.catalog-item:hover {
+	box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 .manufacturers-list {
@@ -284,13 +312,100 @@ p {
 
 .main-footer {
 	background-color: #32425c;
+	color: #ffffff;
+	padding-top: 15px;
 }
+
+.footer-menu a {
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.footer-menu a:hover {
+	text-decoration: underline;
+}
+
+.footer-menu a:active {
+	text-decoration: none;
+	color: #f1f5f7;
+	opacity: 0.5;
+}
+
+.top-menu_wrapper-footer {
+	
+	display: flex;
+	justify-content: space-between;
+}
+
+.top-menu_middle-footer {
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.address {
+	margin: 0;
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #f1f5f7;
+}
+.upper-footer_shop-menu a {
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffd180;
+}
+
+.upper-footer_shop-menu a:hover {
+	text-decoration: underline;
+}
+
+.upper-footer_shop-menu a:active {
+	text-decoration: none;
+	opacity: 0.5;
+}
+
 
 .lower-footer {
 	background-color: #293449;
 }
 
-.logo-footer {
-	position: relative;
-	top: 10px;
+.menu-lower-footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.copyright-company,
+.feedback,
+.design-copyright {
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.feedback a,
+.design-copyright a {
+	color: #ffd180;
+}
+
+.feedback a:hover {
+	text-decoration: underline;
+}
+
+.feedback a:active {
+	text-decoration: none;
+	color: #ee3643;
+}
+
+.design-copyright a:hover {
+	text-decoration: underline;
+}
+
+.design-copyright a:active {
+	text-decoration: none;
+	color: #ee3643;
 }
