@@ -265,7 +265,7 @@ p {
 }
 
 .catalog-item {
-	outline: 1px solid black;
+	outline: 1px solid #eaeaea;
 	width: 220px;
 	height: 318px;
 	vertical-align: top;
