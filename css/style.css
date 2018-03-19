@@ -427,3 +427,71 @@ p {
 	text-decoration: none;
 	color: #ee3643;
 }
+
+/* ********************** СТИЛИЗАЦИЯ СТРАНИЦЫ КАТАЛОГА ********************* */
+
+.catalog-upper {
+	font-family: 'PT Sans', sans-serif;
+	
+}
+.breadcrumbs li {
+  list-style: none;
+  display: inline-block;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
+  
+}
+
+.calalog-header {
+	background-color: #f2f6f8;
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 30px;
+	color: #32425c;
+	font-weight: normal;
+}
+
+.makers,
+.power-type {
+	text-transform: uppercase;
+}
+
+.makers h3,
+.power-type h3 {
+	font-size: 17px;
+	color: #000000;
+}
+
+.multiselect,
+.radioselect {
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.side-topbar {
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.catalog_paginator ul {
+	font-size: 13px;
+	line-height: 18px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.page-button {
+	padding: 15px;
+	border: 1px solid black;
+	margin-right: 20px;
+}
+
+.about-product_text-container h2 {
+	font-family: 'Cuprum', sans-serif;
+	font-weight: normal;
+}
