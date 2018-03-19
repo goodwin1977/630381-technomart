@@ -310,6 +310,24 @@ p {
 	color: #000000;
 }
 
+.service-slider_controls {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.service h3 {
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: normal;
+}
+
+.transport-companies {
+	font-size: 18px;
+	list-style: 20px;
+}
+
 .main-footer {
 	background-color: #32425c;
 	color: #ffffff;
