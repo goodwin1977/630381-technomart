@@ -52,7 +52,7 @@ p {
 
 .top-menu_wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -77,6 +77,49 @@ p {
 	
 	
 }
+
+.top-menu_search {
+  position: relative;
+  display: inline-block;
+}
+
+.top-menu_search input {
+  height: 32px;
+  width: 230px;
+  border: none;
+  padding: 5px 0 5px 40px;
+  background: #32425c url('../img/Search.png') no-repeat 5% 50%;
+  opacity: 0.5;
+  color: #293449;
+  	
+}
+
+.top-menu_search input:hover {
+  opacity: 1;
+  background: #212a3a url('../img/Search.png') no-repeat 5% 50%;
+  color: #212a3a;
+}
+
+.top-menu_search input:focus {
+  opacity: 1;
+  background: #FFFFFF url('../img/search-red.png') no-repeat 5% 50%;
+}
+
+.top-menu_search label {
+  margin-left: 40px;
+  position: absolute;
+  top: 11px;
+  left: 0;
+}
+
+.top-menu_search input[type=text]:active +label {
+  color: #FFFFFF;
+}
+
+.top-menu_search input[type=text]:focus +label {
+  display: none;
+}
+
 
 .middle-menu {
 	display: flex;
@@ -208,23 +251,40 @@ p {
 	padding: 8px 30px;
 	margin-left: 23px;
 	border-radius: 4px;
-	border: 1px solid black;
 }
 
 .materials {
-	background-color: #ffbf47;
+	background: #ffbf47 url("../img/icon-1.png") no-repeat;
+	
+}
+
+.materials-info,
+.delivery-info {
+	background-color: #e5ac40;
 }
 
 .instruments {
 	background-color: #3bbce3;
 }
 
+.instruments-info {
+	background-color: #35a9cc;
+}
+
 .machines {
 	background-color: #dc91d8;
 }
 
+.machines-info {
+	background-color: #c682c2;
+}
+
 .discount {
 	background-color: #8ed78f;
+}
+
+.discount-info {
+	background-color: #80c180;
 }
 
 .delivery {
