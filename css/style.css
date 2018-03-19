@@ -186,6 +186,14 @@ p {
 	flex-direction: column;
 }
 
+.btn {
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #ee3643;
+	padding: 14px 55px;
+	border-radius: 3px;
+}
+
 .promo-item h3 {
 	color: #ffffff;
 }
@@ -229,6 +237,11 @@ p {
 
 .section-header {
 	background-color: #f9f5f0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 .section-header h2 {
@@ -310,10 +323,33 @@ p {
 	color: #000000;
 }
 
-.service-slider_controls {
-	font-size: 21px;
-	font-weight: bold;
-	line-height: 30px;
+.service-slider_control {
+width: 200px;
+padding: 20px;
+background-color: #32425C;
+color: #ffffff;
+border-bottom: 1px solid black;
+font-size: 21px;
+font-weight: bold;
+display: block;
+}
+
+.service-slider_control-active {
+	background-color: #ffffff;
+	color: #32425C;
+	
+	
+}
+
+.service-slider_control-active:hover {
+	background-color: #293449;
+	color: #ffffff;
+	
+	
+}
+
+.service-slider_control:hover {
+	background-color: #293449;
 }
 
 .service h3 {
@@ -326,6 +362,24 @@ p {
 .transport-companies {
 	font-size: 18px;
 	list-style: 20px;
+}
+
+
+.flex-company {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.contacts {
+	width: 300px;
+}
+
+.map img {
+	margin-bottom: 30px;
+}
+.btn-email {
+	padding: 14px 47px 12px 50px;
 }
 
 .main-footer {
