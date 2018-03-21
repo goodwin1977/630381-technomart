@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
@@ -31,7 +32,8 @@
 	    <div class="menu">
 	      <div class="container">
 	        <div class="middle-menu">
-	          <p class="middle-menu_info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+	          
+              <p class="middle-menu_info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 	          <div class="middle-menu_contacts">
 	            <p class="contacts_phone">+7 (812) 555-05-55</p>
 	            <p class="contacts_address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -40,7 +42,7 @@
 	            <a class="login" href="#">Войти</a>
 	            <a class="registration" href="#">Регистрация</a>
 
-                  <div class="login-popup">  <!-- попап логин -->
+                  <!-- <div class="login-popup">  <!-- попап логин 
                       <a href="#" class="login-popup-close">✕</a>
                       <form class="login-form" action="#" method="post">
                         <input class="login-field" type="text" name="login" placeholder="Логин">
@@ -50,7 +52,7 @@
                           <input type="checkbox" name="remember"> Запомните меня</label>
                         <input type="submit" value="Войти">
                       </form>
-                </div>
+                </div> -->
 	          </div>
 	        </div>
 
@@ -80,12 +82,14 @@
     <div class="container">
       <div class="promo-block">
         <div class="promo-item  materials">
+
           <h3>Материалы</h3>
           <p><a class="promo-info  materials-info" href="catalog.html">на любой вкус</a></p>
+          <div class="flag flag-new">new</div>
         </div>
         <div class="promo-item  instruments">
           <h3>Инструмент</h3>
-          <p><a class="promo-info  instrument-info" href="catalog.html">на все случаи</a></p>
+          <p><a class="promo-info  instruments-info" href="catalog.html">на все случаи</a></p>
         </div>
         <div class="promo-item  machines">
           <h3>Техника</h3>
@@ -97,24 +101,28 @@
             <li class="slider_slide  slider_drill">
               <img alt="drills" src="img/slide01.jpg">
             </li>
-            <li class="slider_slide  slider_perforator">
+            <!-- <li class="slider_slide  slider_perforator">
               <img alt="perforators" src="img/slide02.jpg">
-            </li>
+            </li> -->
           </ul>
           <a class="btn  btn--catalog" href="catalog.html">Открыть каталог</a>
           <span id="next" class="forward"></span>
           <span id="prev" class="back"></span>
         </div>
 
-        <div class="promo-item  discount">
-          <h3>Скидки 50%</h3>
-          <p><a class="promo-info  discount-info" href="catalog.html">на 350 товаров</a></p>
-        </div>
+        <div class="column">
 
-        <div class="promo-item  delivery">
-          <h3>Доставка</h3>
-          <p><a class="promo-info  delivery-info" href="#">бесплатно</a></p>
+            <div class="promo-item  discount">
+              <h3>Скидки 50%</h3>
+              <p><a class="promo-info  discount-info" href="catalog.html">на 350 товаров</a></p>
+            </div>
+
+            <div class="promo-item  delivery">
+              <h3>Доставка</h3>
+              <p><a class="promo-info  delivery-info" href="#">бесплатно</a></p>
+            </div>
         </div>
+        
       </div>
 
       <section class="section-products">
@@ -130,9 +138,9 @@
             </div>
             <div class="image"><img src="img/product04.jpg" alt="Перфоратор BOSCH BFG 9000">
             </div>
-            <a class="title" href="#">Перфоратор BOSCH BFG 9000</a>
-            <del class="price-old">32 500 P.</del>
-            <ins class="price">25 500 P.</ins>
+            <div class="title">Перфоратор BOSCH BFG 9000</div>
+            <div class="price-old">32 500 P.</div>
+            <div class="price">25 500 P.</div>
           </div>
           <div class="catalog-item  catalog-item--main-page">
             <div class="actions">
@@ -141,9 +149,9 @@
             </div>
             <div class="image"><img src="img/product02.jpg" alt="Перфоратор Bosch BFG 3000">
             </div>
-            <a class="title" href="#">Перфоратор Bosch BFG 3000</a>
-            <del class="price-old">22 500 P.</del>
-            <ins class="price">15 500 P.</ins>
+            <div class="title">Перфоратор Bosch BFG 3000</div>
+            <div class="price-old">22 500 P.</div>
+            <div class="price">15 500 P.</div>
           </div>
           <div class="catalog-item  catalog-item--main-page">
             <div class="actions">
@@ -152,19 +160,21 @@
             </div>
             <div class="image"><img src="img/product01.jpg" alt="Перфоратор Bosch BFG 6000">
             </div>
-            <a class="title" href="#">Перфоратор Bosch BFG 6000</a>
-            <del class="price-old">30 500 P.</del>
-            <ins class="price">25 500 P.</ins>
+            <div class="title">Перфоратор Bosch BFG 6000</div>
+            <div class="price-old">30 500 P.</div>
+            <div class="price">25 500 P.</div>
           </div>
           <div class="catalog-item  catalog-item--main-page">
+            <div class="flag flag-new">new</div>
             <div class="actions">
               <a href="#" class="buy">Купить</a>
               <a href="#" class="bookmark">В закладки</a>
             </div>
             <div class="image"><img src="img/product03.jpg" alt="Перфоратор Bosch BFG 2000">
             </div>
-            <a class="title" href="#">Перфоратор Bosch BFG 2000</a>
-            <ins class="price">12 500 P.</ins>
+            <div class="title">Перфоратор Bosch BFG 2000</div>
+            <div class="price-old"></div>
+            <div class="price">12 500 P.</div>
           </div>
         </div>
       </section>
@@ -175,14 +185,14 @@
           <a class="btn  btn--manufacturers" href="catalog.html">Все производители</a>
         </div>
         <div class="manufacturers-list">
-          <a class="manufacturer" href="catalog.html"><img src="img/manufacturer01.jpg" alt="Bosch">Bosch</a>
-          <a class="manufacturer" href="catalog.html"><img src="img/manufacturer02.jpg" alt="Makita">Makita</a>
-          <a class="manufacturer" href="catalog.html"><img src="img/manufacturer03.jpg" alt="DeWalt">DeWalt</a>
-          <a class="manufacturer" href="catalog.html"><img src="img/manufacturer04.jpg" alt="Интерскол">Интерскол</a>
-          <a class="manufacturer" href="catalog.html"><img src="img/manufacturer05.jpg" alt="Hitachi">Hitachi</a>
-          <a class="manufacturer" href="catalog.html"><img src="img/manufacturer06.jpg" alt="LG">LG</a>
-          <a class="manufacturer" href="catalog.html"><img src="img/manufacturer07.jpg" alt="AEG">AEG</a>
-          <a class="manufacturer" href="catalog.html"><img src="img/manufacturer08.jpg" alt="Metabo">Metabo</a>
+          <a class="manufacturer" href="catalog.html"><img src="img/manufacturer01.jpg" alt="Bosch"></a>
+          <a class="manufacturer" href="catalog.html"><img src="img/manufacturer02.jpg" alt="Makita"></a>
+          <a class="manufacturer" href="catalog.html"><img src="img/manufacturer03.jpg" alt="DeWalt"></a>
+          <a class="manufacturer" href="catalog.html"><img src="img/manufacturer04.jpg" alt="Интерскол"></a>
+          <a class="manufacturer" href="catalog.html"><img src="img/manufacturer05.jpg" alt="Hitachi"></a>
+          <a class="manufacturer" href="catalog.html"><img src="img/manufacturer06.jpg" alt="LG"></a>
+          <a class="manufacturer" href="catalog.html"><img src="img/manufacturer07.jpg" alt="AEG"></a>
+          <a class="manufacturer" href="catalog.html"><img src="img/manufacturer08.jpg" alt="Metabo"></a>
         </div>
       </section>
     </div>
@@ -194,7 +204,7 @@
           <br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="service-slider">
           <ul class="service-slider_controls">
-            <li><a class="service-slider_control service-slider_control--active" href="#">Доставка</a>
+            <li><a class="service-slider_control service-slider_control-active" href="#">Доставка</a>
             </li>
             <li><a class="service-slider_control" href="#">Гарантия</a>
             </li>
@@ -229,7 +239,7 @@
     </section>
 
     <section class="company">
-      <div class="container">
+      <div class="container flex-company">
         <div id="shopping" class="about">
           <h2 class="about-header">Компания «Техномарт»</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -243,7 +253,7 @@
             <li><a href="#">ЖелДорЭкспедиция</a>
             </li>
           </ul>
-          <a class="btn  btn--about" href="#">Подробнее о компании</a>
+          <a class="btn  btn-about" href="#">Подробнее о компании</a>
         </div>
         <div class="contacts">
           <h2 class="contacts-header">Контакты</h2>
@@ -251,7 +261,7 @@
             <br>заехав в наш офис:</p>
           <a class="map" href="#"><img src="img/map.jpg" alt="map">
           </a>
-          <a class="btn  btn--email" href="#">Заблудились? Напишите нам!</a>
+          <a class="btn  btn-email" href="#">Заблудились? Напишите нам!</a>
         </div>
       </div>
     </section>
@@ -260,53 +270,45 @@
   <footer class="main-footer">
     <div class="upper-footer">
       <div class="container">
-        <div id="contacts" class="upper-footer_contacts">
-          <a class="logo" href="#">Техномарт</a>
-          <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          <br>+7 (812) 555-05-55</p>
+        <div class="top-menu_wrapper-footer">
+            <div id="contacts" class="upper-footer_contacts">
+              <a class="logo logo-footer" href="#">Техномарт</a>
+            </div>
+            <div class="footer-menu"><a href="#">Компания</a></div>
+            <div class="footer-menu"><a href="#">Новости</a></div>
+            <div class="footer-menu"><a href="catalog.html">Каталог</a></div>
+            <div class="footer-menu"><a href="#shipping">Доставка</a></div>
+            <div class="footer-menu"><a href="#contacts">Контакты</a></div>
         </div>
-        <div class="footer-menu">
-          <ul class="upper-footer_site-menu">
-            <li><a href="#">Компания</a>
-            </li>
-            <li><a href="#">Новости</a>
-            </li>
-            <li><a href="catalog.html">Каталог</a>
-            </li>
-            <li><a href="#shipping">Доставка</a>
-            </li>
-            <li><a href="#contacts">Контакты</a>
-            </li>
-          </ul>
-          <ul class="upper-footer_shop-menu">
-            <li><a href="catalog.html">Материалы</a>
-            </li>
-            <li><a href="catalog.html">Техника</a>
-            </li>
-            <li><a href="catalog.html">Инструмент</a>
-            </li>
-            <li><a href="catalog.html">Спецпредложения</a>
-            </li>
-          </ul>
+         <div class="top-menu_middle-footer">
+              <div class="address">
+                  <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                  <br>+7 (812) 555-05-55</p>
+              </div>
+              <div class="upper-footer_shop-menu"><a href="catalog.html">Материалы</a></div>
+              <div class="upper-footer_shop-menu"><a href="catalog.html">Техника</a></div>
+              <div class="upper-footer_shop-menu"><a href="catalog.html">Инструмент</a></div>
+              <div class="upper-footer_shop-menu"><a href="catalog.html">Спецпредложения</a></div>
+          </div>
         </div>
       </div>
-    </div>
-
     <div class="lower-footer">
       <div class="container">
-        <p class="copyright-company">© 2010–2017 Компания «Техномарт»
-          <br>Все права защищены</p>
-        <div class="social-buttons">
-          <a class="btn-social  btn-social--vk" href="http://vk.com">Вконтакте</a>
-          <a class="btn-social  btn-social--fb" href="http://facebook.com">Facebook</a>
-          <a class="btn-social  btn-social--inst" href="http://instagram.com">Instagram</a>
+        <div class="menu-lower-footer">
+          <p class="copyright-company">© 2010–2017 Компания «Техномарт»
+            <br>Все права защищены</p>
+          <div class="social-buttons">
+            <a class="btn-social  btn-social--vk" href="http://vk.com">Вконтакте</a>
+            <a class="btn-social  btn-social--fb" href="http://facebook.com">Facebook</a>
+            <a class="btn-social  btn-social--inst" href="http://instagram.com">Instagram</a>
+          </div>
+          <p class="feedback">Обратная связь:
+            <br><a class="e-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="design-copyright">Разработано-
+            <br><a class="designer" href="http://htmlacademy.ru/">www.htmlacademy.ru</a>
+          </p>
         </div>
-        <p class="feedback">Обратная связь:
-          <br><a class="e-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <p class="design-copyright">Разработано:
-          <br><a class="designer" href="http://htmlacademy.ru/">www.htmlacademy.ru</a>
-        </p>
       </div>
     </div>
   </footer>
