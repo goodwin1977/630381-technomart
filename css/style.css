@@ -55,65 +55,69 @@ p {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 22px;
+	height: 42px;
  }
 
 .top-menu_wrapper a {
 	color: #ffffff;
-	line-height: 18px;
 }
 
 .logo {
 	text-transform: uppercase;
 	font-size: 24px;
-	line-height: 24px;
+	display: flex;
+	align-items: center;
 	color: #ffffff;
 	background-color: #EE3643;
-	padding: 13px 55px 11px 55px;
+	padding: 0 56px;
 	position: relative;
+	height: 100%;
 }
 
 .logo::after {
 	content: '';
     position: absolute;
     width: 100%;
-    height: 6px;
+    height: 5px;
     background-color: #b52933;
     left: 0;
-    bottom: -6px;
+    bottom: -5px;
  }
 
 .top-menu_search {
 	position: relative;
 	display: inline-block;
-	left: -4px;
+	margin-right: 20px;
+	height: 100%;
 }
 
 .top-menu_search input {
 	height: 32px;
 	width: 230px;
 	border: none;
-	padding: 5px 0 5px 30px;
-	background: #32425c url('../img/Search.png') no-repeat 5% 50%;
+	padding: 5px 0 5px 40px;
+	background: #32425c url('../img/Search.png') no-repeat 3% 50%;
 	opacity: 0.5;
 	color: #293449;
+	height: 100%;
+	box-sizing: border-box;
 }
 
 .top-menu_search input:hover {
 	opacity: 1;
-	background: #212a3a url('../img/Search.png') no-repeat 5% 50%;
+	background: #212a3a url('../img/Search.png') no-repeat 3% 50%;
 	color: #212a3a;
 }
 
 .top-menu_search input:focus {
 	opacity: 1;
-	background: #FFFFFF url('../img/search-red.png') no-repeat 5% 50%;
+	background: #FFFFFF url('../img/search-red.png') no-repeat 3% 50%;
 }
 
-.top-menu_search label { 
-	margin-left: 43px;
+.top-menu_search label {
+	margin-left: 37px;
 	position: absolute;
-	top: 10px;
+	top: 11px;
 	left: 0;
 }
 
@@ -125,55 +129,114 @@ p {
 	display: none;
 }
 
+.top-menu_bookmarks {
+	height: 100%;
+}
+
+.top-menu_bookmarks:hover {
+	background-color: #212a3a;
+}
+
 .top-menu_bookmarks a {
-	background-color: red;
-	padding: 14px 28px 11px 44px;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 0 22px;
+}
+
+.bookmarks_icon {
+	width: 14px;
+	height: 16px;
+	background-image: url('../img/icon-bookmark.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 15px;
+}
+
+.top-menu_basket {
+	height: 100%;
+}
+
+.top-menu_basket:hover {
+	background-color: #212a3a;
 }
 
 .top-menu_basket a {
-	background-color: yellow;
-	padding: 14px 31px 11px 49px;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 0 22px;
+}
+
+.basket_icon {
+	width: 15px;
+	height: 15px;
+	background-image: url('../img/cart-icon.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 15px;
+}
+
+.top-menu_order {
+	height: 100%;
 }
 
 .top-menu_order a {
 	background-color: #63a63e;
-    padding: 14px 22px 11px 20px;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 0 22px;
 }
 
 .middle-menu {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	padding-top: 46px;
 }
 
-
-
 .middle-menu_info {
-	
-	
-	
+	width: 300px;
+	padding: 0 53px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+
+.middle-menu_info p {
 	font-family: 'Cuprum', sans-serif;
 	font-style: italic;
 	font-size: 16px;
 	line-height: 23px;
 	color: #ee3643;
-	width: 255px;
-	padding: 17px 37px 0 16px;
-	
+	margin-top: 0;
 }
+
 .middle-menu_contacts {
-	margin: 0;
-	padding: 0;
+	width: 300px;
+	padding-right: 30px;
+	box-sizing: border-box;
 }
 
 .contacts_phone {
 	font-family: 'Cuprum', sans-serif;
 	font-size: 21px;
-	line-height: 21px;
 	color: #ee3643;
-	outline: 4px solid #ffffff;
-	padding: 13px 47px 11px 69px;
+	border: 3px solid #ffffff;
 	margin-bottom: 0;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 8px 11px;
+}
+
+.phone-icon {
+	width: 19px;
+	height: 19px;
+	background-image: url('../img/icon-phone.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 40px;
 }
 
 .contacts_address {
@@ -181,27 +244,44 @@ p {
 	font-size: 14px;
 	line-height: 24px;
 	color: #32425c;
-	margin-top: 7px;
+	margin-top: 3px;
+	text-align: center;
 }
 
 .middle-menu_account {
-	margin-top: 30px;
-	padding: 5px 0 0 0;
-	font-size: 21px;
-	line-height: 21px;
-	color: #000000;
-	align-self: flex-start;
+	width: 300px;
+	text-align: right;
 }
 
 .login {
-	background-color: #ffffff;
-	padding: 14px 26px 16px 47px;
+	display: inline-block;
+	font-size: 21px;
+	color: #000000;
+	background-color: #fff;
+	padding: 11px 20px;
+	margin-right: 5px;
+}
+
+.login-icon {
+	display: inline-block;
+	width: 20px;
+	height: 17px;
+	background-image: url('../img/icon-login.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 9px;
+}
+
+.login:hover .login-icon {
+	background-image: url('../img/icon-login-hover.png');
 }
 
 .registration {
-	background-color: #ffffff;
-	padding: 14px 24px;
-	margin-left: 10px;
+	display: inline-block;
+	font-size: 21px;
+	color: #000000;
+	padding: 11px 24px;
+	background-color: #fff;
 }
 
 .middle-menu_account a:hover {
@@ -215,10 +295,11 @@ p {
 
 .lower-menu {
 	padding-bottom: 45px;
+	margin-top: 23px;
 }
 
 .lower-menu_menu {
-	padding:0;
+	padding: 0 20px;
 	background-color: #32425c;
 	box-shadow: inset 0 -5px 0 #293449;
 	color: #ffffff;
@@ -229,12 +310,8 @@ p {
 
 .lower-menu_menu a {
 	color: #ffffff;
-	padding: 19px 31px;
-}
-
-.lower-menu_menu li {
-	padding-top: 21px;
-	padding-bottom: 21px;
+	padding: 21px 31px;
+	display: inline-block;
 }
 
 .lower-menu_menu li:hover {
@@ -326,12 +403,28 @@ p {
 	background-color: #e5ac40;
 }
 
+.materials-info:hover {
+	opacity: 0.2;
+}
+
+.materials-info:active {
+	opacity: 0.3;
+}
+
 .instruments {
 	background: #3bbce3 url("../img/icon-2.png") no-repeat 195px 34px; 
 }
 
 .instruments-info {
 	background-color: #35a9cc;
+}
+
+.instruments-info:hover {
+	opacity: 0.2;
+}
+
+.instruments-info:active {
+	opacity: 0.3;
 }
 
 .machines {
@@ -342,12 +435,28 @@ p {
 	background-color: #c682c2;
 }
 
+.machines-info:hover {
+	opacity: 0.2;
+}
+
+..machines-info:active {
+	opacity: 0.3;
+}
+
 .discount {
 	background: #8ed78f url("../img/icon-4.png") no-repeat 195px 50%;
 }
 
 .discount-info {
 	background-color: #80c180;
+}
+
+.discount-info:hover {
+	opacity: 0.2;
+}
+
+.discount-info:active {
+	opacity: 0.3;
 }
 
 .delivery {
@@ -357,6 +466,14 @@ p {
 
 .delivery-info {
 	background-color: #e5ac40;
+}
+
+.delivery-info:hover {
+	opacity: 0.2;
+}
+
+.delivery-info:active {
+	opacity: 0.3;
 }
 
 .section-header {
