@@ -744,7 +744,7 @@ p {
 .main-footer {
 	background-color: #32425c;
 	color: #ffffff;
-	padding-top: 15px;
+	
 }
 
 .footer-menu a {
@@ -763,26 +763,29 @@ p {
 	opacity: 0.5;
 }
 
-.logo-footer {
+.logo-footer  {
 	text-transform: uppercase;
 	font-size: 30px;
 	line-height: 30px;
 	color: #ffffff;
 	background-color: #EE3643;
-	padding: 21px 41px 7px 42px;
-	position: relative;
-	top: 9px;
+	padding: 14px 41px;
+	
+	
+	
+	
 }
 
 .top-menu_wrapper-footer {
 	
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-end;
 }
 
 .top-menu_middle-footer {
-	padding-top: 50px;
-	padding-bottom: 55px;
+	padding-top: 38px;
+	padding-bottom: 47px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -815,7 +818,7 @@ p {
 }
 
 .menu-lower-footer {
-	padding-top: 40px;
+	padding-top: 21px;
 	padding-bottom: 40px;
 	display: flex;
 	justify-content: space-between;
