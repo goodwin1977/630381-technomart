@@ -504,16 +504,13 @@ p {
 }
 
 
-.catalog-item{
+.catalog-item {
 	outline: 1px solid #eaeaea;
     position:relative;
     display:inline-block;
     width:218px;
-    
-    border:1px solid #ccc;
-   
-    font-weight:bold;
-    text-align:center;
+	font-weight:bold;
+	text-align:center;
 }
 .catalog-items{
     font-size:0;
@@ -550,7 +547,7 @@ p {
     margin-bottom:7px;
     padding:7px 0;
     border:3px solid #63a63e;
-    border-bottom-color:#367315; 
+	border-bottom-color:#367315; 
     background-color:#63a63e;
     color:white;
     font-size:14px;
@@ -561,22 +558,50 @@ p {
     text-transform:uppercase;    
     border-radius:3px;
 }
-.catalog-item .actions .bookmark{
+.catalog-item .actions .bookmark {
     color:#32425c;
     background:white;
     border-bottom-color:#63a63e;
 }
+
+.catalog-item .actions .buy:hover {
+	background-color: #5fbb2d;
+	border:3px solid #5fbb2d;
+    border-bottom-color:#367315;
+
+}
+
+.catalog-item .actions .buy:active {
+	background-color: #518534;
+	border:3px solid #518534;
+    
+}
+
+.catalog-item .actions .bookmark:hover {
+	border:3px solid #32425c;
+}
+
+.catalog-item .actions .bookmark:active {
+	opacity: 0.3;
+}
+
 .catalog-item .actions{
     display:none;
 }
 .catalog-item:hover .actions{
-    display:block;
-   
+	display:block;
 }
+
+.catalog-item:hover {
+	border: none;
+	box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+}
+
 .catalog-item .image{
     width:218px;
     height:168px;
 }
+
 .catalog-item .image img{
     max-width:100%;
 }
@@ -602,6 +627,7 @@ p {
     color:white;
     background:#ee3643;
     border-radius:3px;
+    cursor: pointer;
 }
 .catalog-item .price:after{
     content:"";
