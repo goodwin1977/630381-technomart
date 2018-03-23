@@ -682,6 +682,9 @@ img {
 
 .service {
 	background-color: #f4f8f9;
+	background-image: url('../img/service-menu_shadow.png');
+	background-repeat: no-repeat;
+	background-position: 478px 107px;  // временные координаты
 }
 
 .service h2 {
@@ -763,7 +766,7 @@ img {
 	margin-top: -223px;
 	margin-left: -470px;
 	z-index: 20;
-
+	display: none;
 }
 
 .modal-map p {
