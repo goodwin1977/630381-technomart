@@ -36,11 +36,6 @@ p {
 	line-height: 24px;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-}
-
 .main-header {
 	background-color: #f3f7f8;
 	font-size: 17px;
@@ -739,19 +734,39 @@ img {
 	background-color: #ffffff;
 }
 
-.manufacturer img:nth-child(4n) {
- 	margin-right: 0;
-}
+
 
 .service {
 	background-color: #f4f8f9;
 	background-image: url('../img/service-menu_shadow.png');
 	background-repeat: no-repeat;
 	background-position: 478px 107px;  // временные координаты
+
 }
 
 .service h2 {
 	color: #000000;
+}
+
+.service-slider {
+	
+	display: flex;
+	justify-content: flex-start;
+}
+
+.slide-delivery h3 {
+	margin: 0;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+.slide-delivery p {
+	padding-left: 50px;
+	padding-top: 13px;
+}
+
+.service-slider_slides-wrapper {
+	margin-left: 30px;
 }
 
 .service-slider_control {
