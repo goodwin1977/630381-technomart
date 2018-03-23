@@ -21,6 +21,7 @@ ul {
 h2 {
 	text-transform: uppercase;
 	font-size: 30px;
+	font-weight: normal;
 }
 
 h3 {
@@ -345,10 +346,65 @@ img {
 .slider {
 	padding: 0;
 	margin: 0;
+	
+}
+
+.slider-perforator {
+	display: none;
 }
 
 .slider-wrapper {
 	margin-bottom: 0;
+	position: relative;
+}
+
+.forward {
+	position: absolute;
+	top: 115px;
+	left: 30px;
+	background-image: url('../img/icon-left.png');
+	background-repeat: no-repeat;
+	width: 28px;
+	height: 44px;
+	cursor: pointer;
+}
+
+.back {
+	position: absolute;
+	top: 115px;
+	right: 13px;
+	background-image: url('../img/icon-right.png');
+	background-repeat: no-repeat;
+	width: 28px;
+	height: 44px;
+	cursor: pointer;
+}
+
+.slider-paginator {
+	position: absolute;
+	bottom: 30px;
+	left: 290px;
+	z-index: 11;
+
+}
+
+.page-btn {
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	margin: 0 5px;
+	background: white;
+	border: 2px solid white;
+	vertical-align: top;
+	border-radius: 50%;
+	cursor: pointer;
+  
+
+}
+
+.page-btn-active {
+	background: #ee3643;
+	
 }
 
 .column {
@@ -362,6 +418,13 @@ img {
 	background-color: #ee3643;
 	padding: 10px 55px 10px 35px;
 	border-radius: 3px;
+}
+
+.btn-catalog {
+	position: absolute;
+	top: 205px;
+	right: 400px;
+
 }
 
 .promo-item h3 {
@@ -729,7 +792,39 @@ img {
 
 .transport-companies {
 	font-size: 18px;
-	list-style: 20px;
+	list-style: none;
+	line-height: 20px;
+	position: relative;
+	margin: 25px 0;
+	
+}
+
+.transport-companies li {
+	padding-bottom: 20px;
+}
+
+.transport-companies a {
+	color: #000000;
+	font-size: 18px;
+	line-height: 20px;
+
+}
+.transport-companies li:before {
+  content: '';
+  width: 25px;
+  height: 2px;
+  background: #ee3643;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+.transport-companies li:nth-child(2):before {
+  top: 50px;
+}
+
+.transport-companies li:nth-child(3):before {
+  top: 89px;
 }
 
 
