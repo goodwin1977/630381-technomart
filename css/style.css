@@ -315,6 +315,11 @@ p {
 	display: inline-block;
 }
 
+.lower-menu_menu li {
+	
+	display: inline-block;
+}
+
 .lower-menu_menu li:hover {
 	background-color: #293449;
 }
@@ -740,12 +745,16 @@ p {
 	background-color: #f4f8f9;
 	background-image: url('../img/service-menu_shadow.png');
 	background-repeat: no-repeat;
-	background-position: 478px 107px;  // временные координаты
+	background-position: 440px 150px;  // временные координаты
 
 }
 
 .service h2 {
 	color: #000000;
+}
+
+.service-intro {
+	margin-bottom: 65px;
 }
 
 .service-slider {
@@ -756,7 +765,7 @@ p {
 
 .slide-delivery h3 {
 	margin: 0;
-	margin-top: 20px;
+	
 	margin-left: 50px;
 }
 
@@ -765,8 +774,16 @@ p {
 	padding-top: 13px;
 }
 
+.slide-delivery {
+	background-image: url('../img/service_slide01.png');
+	background-repeat: no-repeat;
+	background-position: 200px 24px;
+}
+
+
 .service-slider_slides-wrapper {
 	margin-left: 30px;
+	flex-grow: 1;
 }
 
 .service-slider_control {
@@ -778,6 +795,11 @@ p {
 	font-size: 21px;
 	font-weight: bold;
 	display: block;
+}
+
+.service-slider_controls {
+	padding-left: 0;
+	
 }
 
 .service-slider_control-active {
