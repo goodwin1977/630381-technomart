@@ -715,6 +715,7 @@ p {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	margin-bottom: 65px;
 }
 
 .manufacturer img {
@@ -737,15 +738,21 @@ p {
 
 
 .service {
-	background-color: #f4f8f9;
-	background-image: url('../img/service-menu_shadow.png');
-	background-repeat: no-repeat;
-	background-position: 478px 107px;  // временные координаты
+	background-color: #f4f8fa;
+	margin-bottom: 80px;
 
 }
 
 .service h2 {
+	margin: 0;
 	color: #000000;
+	padding-top: 65px;
+	padding-bottom: 10px;
+
+}
+
+.service-intro {
+	margin-bottom: 47px;
 }
 
 .service-slider {
@@ -754,19 +761,20 @@ p {
 	justify-content: flex-start;
 }
 
-.slide-delivery h3 {
+.slide-tabs {
+	margin-left: 30px;
+	position: relative;
+}
+
+.slide-tabs h3 {
 	margin: 0;
 	margin-top: 20px;
 	margin-left: 50px;
 }
 
-.slide-delivery p {
+.slide-tabs p {
 	padding-left: 50px;
 	padding-top: 13px;
-}
-
-.service-slider_slides-wrapper {
-	margin-left: 30px;
 }
 
 .service-slider_control {
@@ -778,6 +786,64 @@ p {
 	font-size: 21px;
 	font-weight: bold;
 	display: block;
+}
+
+.service-slider_controls {
+	
+	padding-left: 0;
+	margin-top: 18px;
+	margin-bottom: 100px;
+	position: relative;
+}
+
+.service-slider_controls:after {
+	position: absolute;
+	content: '';
+	width: 10px;
+	height: 250px;
+	right: 0;
+	top: -20px;
+	background-image: url('../img/service-menu_shadow.png');
+	background-repeat: no-repeat;
+}
+
+.slide-delivery:after {
+	position: absolute;
+	content: '';
+	width: 468px;
+	height: 261px;
+	left: 200px;
+	top: 45px;
+	background-image: url('../img/service_slide01.png');
+	background-repeat: no-repeat;
+}
+
+.slide-guarantee:after {
+	position: absolute;
+	content: '';
+	width: 468px;
+	height: 261px;
+	left: 200px;
+	top: 45px;
+	background-image: url('../img/service_slide02.png');
+	background-repeat: no-repeat;
+}
+
+.slide-credit:after {
+	position: absolute;
+	content: '';
+	width: 468px;
+	height: 261px;
+	left: 200px;
+	top: 45px;
+	background-image: url('../img/service_slide03.png');
+	background-repeat: no-repeat;
+}
+
+.btn-slide-credit {
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 50px;
 }
 
 .service-slider_control-active {
@@ -803,6 +869,10 @@ p {
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: normal;
+}
+
+.about h2 {
+	margin: 0;
 }
 
 .transport-companies {
