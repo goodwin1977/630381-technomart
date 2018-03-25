@@ -315,11 +315,6 @@ p {
 	display: inline-block;
 }
 
-.lower-menu_menu li {
-	
-	display: inline-block;
-}
-
 .lower-menu_menu li:hover {
 	background-color: #293449;
 }
@@ -743,15 +738,8 @@ p {
 
 
 .service {
-<<<<<<< HEAD
-	background-color: #f4f8f9;
-	background-image: url('../img/service-menu_shadow.png');
-	background-repeat: no-repeat;
-	background-position: 440px 150px;  // временные координаты
-=======
 	background-color: #f4f8fa;
 	margin-bottom: 80px;
->>>>>>> a76e9787dce6a1163ed2f70ac80bf6c348c1b69e
 
 }
 
@@ -767,10 +755,6 @@ p {
 	margin-bottom: 47px;
 }
 
-.service-intro {
-	margin-bottom: 65px;
-}
-
 .service-slider {
 	
 	display: flex;
@@ -784,7 +768,7 @@ p {
 
 .slide-tabs h3 {
 	margin: 0;
-	
+	margin-top: 20px;
 	margin-left: 50px;
 }
 
@@ -793,21 +777,6 @@ p {
 	padding-top: 13px;
 }
 
-<<<<<<< HEAD
-.slide-delivery {
-	background-image: url('../img/service_slide01.png');
-	background-repeat: no-repeat;
-	background-position: 200px 24px;
-}
-
-
-.service-slider_slides-wrapper {
-	margin-left: 30px;
-	flex-grow: 1;
-}
-
-=======
->>>>>>> a76e9787dce6a1163ed2f70ac80bf6c348c1b69e
 .service-slider_control {
 	width: 200px;
 	padding: 20px;
@@ -820,10 +789,6 @@ p {
 }
 
 .service-slider_controls {
-<<<<<<< HEAD
-	padding-left: 0;
-	
-=======
 	
 	padding-left: 0;
 	margin-top: 18px;
@@ -879,7 +844,6 @@ p {
 	display: inline-block;
 	margin-top: 20px;
 	margin-left: 50px;
->>>>>>> a76e9787dce6a1163ed2f70ac80bf6c348c1b69e
 }
 
 .service-slider_control-active {
