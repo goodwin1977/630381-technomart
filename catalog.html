@@ -19,7 +19,7 @@
             <div class="top-menu_bookmarks">
               <a href="#"><span class="bookmarks_icon"></span> Закладки: 0</a>
             </div>
-            <div class="top-menu_basket">
+            <div class="top-menu_basket active">
               <a href="#"><span class="basket_icon"></span> Корзина: 10</a>
             </div>
             <div class="top-menu_order">
@@ -94,21 +94,22 @@
           <h3 class="side-topbar">Фильтр:</h3>
           <form class="side-left">
             
-            <section class="price-range">
-              <h3>Цена:</h3>
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
-              </div>
-              <div class="price-controls">
-                от
-                <input class="min-price" type="text" value="0"> до
-                <input class="max-price" type="text" value="30 000">
-              </div>
-            </section>
+            <fieldset class="filter-item">
+        <legend>цена:</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price"><input name="min-price" type="text" value="0"></label>
+            <label class="max-price"><input name="max-price" type="text" value="30000"></label>
+          </div>
+        </div>
+      </fieldset>
 
             <section class="makers">
               <h3>Производители:</h3>
