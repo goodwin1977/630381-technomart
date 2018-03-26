@@ -244,7 +244,8 @@
       <div class="container flex-company">
         <div id="shopping" class="about">
           <h2 class="about-header">Компания «Техномарт»</h2>
-          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <!--Использую вспомогательный класс mgb25-->
+          <p class="mgb25">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p>Мы можем доставить ваш товар в самые отдаленые точки России!
             <br>Техномарт работает со многими транспортными компаниями:</p>
           <ul class="transport-companies">
@@ -259,9 +260,10 @@
         </div>
         <div class="contacts">
           <h2 class="contacts-header">Контакты</h2>
-          <p>Вы можете забрать товар сами,
+          <!-- Вспомогательный класс -->
+          <p class="mgb30">Вы можете забрать товар сами,
             <br>заехав в наш офис:</p>
-          <a class="map" href="#"><img src="img/map.jpg" width="300" height="160" alt="map">
+          <a class="map" href="#"><img src="img/map.jpg" alt="map">
           </a>
           <a class="btn  btn-email" href="#">Заблудились? Напишите нам!</a>
         </div>
@@ -279,24 +281,47 @@
     <div class="upper-footer">
       <div class="container">
         <div class="top-menu_wrapper-footer">
+
+          <!-- Не понял почему такое название классов, ведь у тебя в этом блоке просто логотип -->
             <div id="contacts" class="upper-footer_contacts">
               <a class="logo logo-footer" href="#">Техномарт</a>
             </div>
-            <div class="footer-menu"><a href="#">Компания</a></div>
+
+            <!-- <div class="footer-menu"><a href="#">Компания</a></div>
             <div class="footer-menu"><a href="#">Новости</a></div>
             <div class="footer-menu"><a href="catalog.html">Каталог</a></div>
             <div class="footer-menu"><a href="#shipping">Доставка</a></div>
-            <div class="footer-menu"><a href="#contacts">Контакты</a></div>
+            <div class="footer-menu"><a href="#contacts">Контакты</a></div> -->
+
+            <!--Полностью блок переверстываю-->
+              <ul class="footer__menu">
+                <li><a href="#">Компания</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+
         </div>
          <div class="top-menu_middle-footer">
               <div class="address">
                   <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                   <br>+7 (812) 555-05-55</p>
               </div>
-              <div class="upper-footer_shop-menu"><a href="catalog.html">Материалы</a></div>
+
+
+              <!-- <div class="upper-footer_shop-menu"><a href="catalog.html">Материалы</a></div>
               <div class="upper-footer_shop-menu"><a href="catalog.html">Техника</a></div>
               <div class="upper-footer_shop-menu"><a href="catalog.html">Инструмент</a></div>
-              <div class="upper-footer_shop-menu"><a href="catalog.html">Спецпредложения</a></div>
+              <div class="upper-footer_shop-menu"><a href="catalog.html">Спецпредложения</a></div> -->
+
+              <ul class="footer__menu footer__menu_catalog">
+                <li><a href="#">Материалы</a></li>
+                <li><a href="#">Техника</a></li>
+                <li><a href="#">Инструмент</a></li>
+                <li><a href="#">Спецпредложения</a></li>
+              </ul>
+
           </div>
         </div>
       </div>
@@ -306,9 +331,18 @@
           <p class="copyright-company">© 2010–2017 Компания «Техномарт»
             <br>Все права защищены</p>
           <div class="social-buttons">
-            <a class="btn-social  btn-social--vk" href="http://vk.com">Вконтакте</a>
+
+            <!-- Очевидно что тут список -->
+            <ul class="social__links">
+              <li class="vk"><a href="#">Вконтакте</a></li>
+              <li class="fb"><a href="#">Facebook</a></li>
+              <li class="in"><a href="#">Instagram</a></li>
+            </ul>
+
+            <!-- <a class="btn-social  btn-social--vk" href="http://vk.com">Вконтакте</a>
             <a class="btn-social  btn-social--fb" href="http://facebook.com">Facebook</a>
-            <a class="btn-social  btn-social--inst" href="http://instagram.com">Instagram</a>
+            <a class="btn-social  btn-social--inst" href="http://instagram.com">Instagram</a> -->
+            
           </div>
           <p class="feedback">Обратная связь:
             <br><a class="e-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>

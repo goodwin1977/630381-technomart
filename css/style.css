@@ -134,8 +134,25 @@ p {
 	height: 100%;
 }
 
-.top-menu_bookmarks:hover {
+.bookmarks_icon {
+	width: 14px;
+	height: 16px;
+	background-image: url('../img/icon-bookmark-hover.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 15px;
+	opacity: 0.3;
+}
+
+
+
+.top-menu_bookmarks:hover .bookmarks_icon {
+	opacity: 1;
+}
+
+.top-menu_bookmarks:active {
 	background-color: #212a3a;
+	opacity: 0.3;
 }
 
 .top-menu_bookmarks a {
@@ -145,21 +162,29 @@ p {
 	padding: 0 22px;
 }
 
-.bookmarks_icon {
-	width: 14px;
-	height: 16px;
-	background-image: url('../img/icon-bookmark.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-right: 15px;
-}
+
 
 .top-menu_basket {
 	height: 100%;
 }
 
-.top-menu_basket:hover {
+.basket_icon {
+	width: 15px;
+	height: 15px;
+	background-image: url('../img/cart-icon2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 15px;
+	opacity: 0.3;
+}
+
+.top-menu_basket:hover .basket_icon {
+	opacity: 1;
+}
+
+.top-menu_basket:active {
 	background-color: #212a3a;
+	opacity: 0.3;
 }
 
 .top-menu_basket a {
@@ -169,14 +194,7 @@ p {
 	padding: 0 22px;
 }
 
-.basket_icon {
-	width: 15px;
-	height: 15px;
-	background-image: url('../img/cart-icon.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-right: 15px;
-}
+
 
 .top-menu_order {
 	height: 100%;
@@ -188,6 +206,15 @@ p {
 	align-items: center;
 	height: 100%;
 	padding: 0 22px;
+}
+
+.top-menu_order a:hover {
+	background-color: #5fbb2d;
+}
+
+.top-menu_order a:active {
+	
+	opacity: 0.5;
 }
 
 .middle-menu {
@@ -329,7 +356,7 @@ p {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-bottom: 35px;
+	margin-bottom: 40px;
 }
 
 .promo-item {
@@ -704,7 +731,10 @@ p {
     border-left-color:#ee3643;
 }
 
-
+.section-header--manufacturers h2 {
+	margin: 0;
+	padding: 32px 5px;
+}
 
 
 
@@ -739,7 +769,7 @@ p {
 
 .service {
 	background-color: #f4f8fa;
-	margin-bottom: 80px;
+	margin-bottom: 45px;
 
 }
 
@@ -871,53 +901,59 @@ p {
 	font-weight: normal;
 }
 
-.about h2 {
-	margin: 0;
-}
-
 .transport-companies {
 	font-size: 18px;
 	list-style: none;
-	line-height: 20px;
-	position: relative;
-	margin: 25px 0;
-	
-}
-
-.transport-companies li {
-	padding-bottom: 20px;
-}
-
-.transport-companies a {
-	color: #000000;
-	font-size: 18px;
-	line-height: 20px;
-
-}
-.transport-companies li:before {
-  content: '';
-  width: 25px;
-  height: 2px;
-  background: #ee3643;
-  position: absolute;
-  left: 0;
-  top: 10px;
-}
-
-.transport-companies li:nth-child(2):before {
-  top: 50px;
-}
-
-.transport-companies li:nth-child(3):before {
-  top: 89px;
+	margin-bottom: 36px;
 }
 
 
 .flex-company {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin-bottom: 20px;
 }
+
+/*Компания*/
+.company {
+	padding: 0;
+	padding-bottom: 61px;
+}
+.mgb25 {
+	margin-bottom: 25px;
+	padding-right: 50px;
+}
+.mgb30 {
+	margin-bottom: 30px;
+}
+.transport-companies li {
+	margin-bottom: 20px;
+	position: relative;
+}
+.transport-companies li::before {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 2px;
+	background-color: #ee3643;
+	left: -40px;
+	top: 10px;
+}
+.transport-companies li a {
+	color: #000;
+}
+/*Если из ссылки делаешь кнопку по виду, то надо всегда ей давать display: inline-block. Таки образом она не будет
+блоком - т.е. не будет растягиваться на всю ширину, и будет адекватно понимать маржин и падинг*/
+.btn-about {
+	display: inline-block;
+	padding: 10px 40px;
+}
+
+
 
 .contacts {
 	width: 300px;
@@ -926,10 +962,14 @@ p {
 .map img {
 	margin-bottom: 30px;
 }
-.btn-email {
-	padding: 14px 47px 12px 50px;
-}
 
+/*Поправил немного*/
+.btn-email {
+	display: block;
+  margin-top: 6px;
+  padding: 10px 40px;
+}
+<!-- ********************************************************************************************* -->
 .modal {
 	
 	position: fixed;
@@ -993,7 +1033,9 @@ p {
 .main-footer {
 	background-color: #32425c;
 	color: #ffffff;
-	
+
+	/*Не понял зачем*/
+	/* padding-top: 15px; */
 }
 
 .footer-menu a {
@@ -1012,32 +1054,77 @@ p {
 	opacity: 0.5;
 }
 
-.logo-footer  {
+.logo-footer {
 	text-transform: uppercase;
 	font-size: 30px;
-	line-height: 30px;
+	/* line-height: 30px; */
 	color: #ffffff;
 	background-color: #EE3643;
-	padding: 14px 41px;
-	
-	
-	
-	
+	/* padding: 21px 41px 7px 42px; */
+	padding: 15px 41px;
+	position: relative;
+	/* top: 9px; */
+
+	/*добавил*/
+	height: auto;
+	display: inline-block;
+}
+
+/*Footer Menu*/
+.footer__menu {
+	list-style: none;
+	padding: 0;
+	margin: 40px 0 0;
+}
+.footer__menu li {
+	display: inline-block;
+	margin-left: 55px;
+}
+.footer__menu li a {
+	color: #f3f7f9;
+	font-size: 18px;
+}
+
+.footer__menu li:hover {
+	text-decoration: underline;
+}
+
+.footer__menu li:active {
+	text-decoration: none;
+	opacity: 0.5;
 }
 
 .top-menu_wrapper-footer {
-	
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .top-menu_middle-footer {
-	padding-top: 38px;
-	padding-bottom: 47px;
+	padding-top: 32px;
+	padding-bottom: 50px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
+
+/*Добавил*/
+.footer__menu_catalog {
+	margin-top: 0;
+}
+.footer__menu_catalog li a {
+	color: #ffd180;
+}
+
 
 .address {
 	margin: 0;
@@ -1067,19 +1154,87 @@ p {
 }
 
 .menu-lower-footer {
-	padding-top: 21px;
+	padding-top: 40px;
 	padding-bottom: 40px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	/* -webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center; */
 }
 
 .copyright-company,
 .feedback,
 .design-copyright {
-	font-size: 16px;
+	/* font-size: 16px; */
+	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
+	margin: 0;
+}
+.copyright-company {
+	margin: 0;
+	font-size: 14px;
+	width: 300px;
+}
+.feedback {
+	width: 150px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding-left: 15px;
+}
+.design-copyright {
+	width: 150px;
+  padding-left: 42px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.social-buttons {
+	width: 300px;
+}
+.social__links {
+	font-size: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+.social__links li {
+	display: inline-block;
+	margin: 0 3px;
+}
+.social__links li a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-color: #212a3a;
+	border-radius: 50%;
+}
+.vk a {
+	background-image: url('../img/vk-icon.png');
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+.fb a {
+	background-image: url('../img/fb-icon.png');
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+.in a {
+	background-image: url('../img/insta-icon.png');
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.social__links li a:hover {
+	background-color: #ee3643;
+}
+
+.social__links li a:active {
+	background-color: #ee3643;
 }
 
 .feedback a,
