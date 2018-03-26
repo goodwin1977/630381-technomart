@@ -1267,14 +1267,72 @@ p {
 .active {
 	background-color: #ee3643;
 }
+
+.breadcrumbs {
+  padding: 0;
+  margin: 20px 20px 20px 30px;
+  position: relative;
+}
+
 .breadcrumbs li {
-	list-style: none;
-	display: inline-block;
-	color: #000000;
-	text-transform: uppercase;
-	font-size: 13px;
-	line-height: 18px;
-  
+  list-style: none;
+  display: inline-block;
+  color: #000000;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 20px;
+}
+
+.breadcrumbs a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.breadcrumbs:before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/icon-home.png');
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs li:first-child:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 10px;
+  height: 12px;
+  background-image: url('../img/icon-right-small.png');
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs li:first-child:after {
+  content: '';
+  position: absolute;
+  left: 90px;
+  top: 5px;
+  width: 10px;
+  height: 12px;
+  background-image: url('../img/icon-right-small.png');
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs li:last-child:before {
+  content: '';
+  position: absolute;
+  left: 210px;
+  top: 5px;
+  width: 10px;
+  height: 12px;
+  background: url('../img/icon-right-small.png');
+  background-repeat: no-repeat;
 }
 
 .catalog-header {
