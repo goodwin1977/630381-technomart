@@ -93,7 +93,7 @@ p {
 	width: 230px;
 	border: none;
 	padding: 5px 0 5px 40px;
-	background: #32425c url('../img/Search.png') no-repeat 3% 50%;
+	background: #32425c url('../img/Search.png') no-repeat 15px 50%;
 	opacity: 0.5;
 	color: #293449;
 	height: 100%;
@@ -102,13 +102,13 @@ p {
 
 .top-menu_search input:hover {
 	opacity: 1;
-	background: #212a3a url('../img/Search.png') no-repeat 3% 50%;
+	background: #212a3a url('../img/Search.png') no-repeat 15px 50%;
 	color: #212a3a;
 }
 
 .top-menu_search input:focus {
 	opacity: 1;
-	background: #FFFFFF url('../img/search-red.png') no-repeat 3% 50%;
+	background: #FFFFFF url('../img/search-red.png') no-repeat 15px 50%;
 }
 
 .top-menu_search label {
@@ -162,6 +162,7 @@ p {
 
 .top-menu_basket {
 	height: 100%;
+	flex-grow: 1;
 }
 
 .basket_icon {
@@ -432,10 +433,12 @@ p {
 }
 
 .btn {
+	display: block;
+	font-size: 14px;
 	text-transform: uppercase;
 	color: #ffffff;
 	background-color: #ee3643;
-	padding: 10px 55px 10px 35px;
+	padding: 12px 45px;
 	border-radius: 3px;
 }
 
@@ -443,7 +446,14 @@ p {
 	position: absolute;
 	top: 205px;
 	right: 400px;
+}
 
+.btn:hover {
+	background-color: #ca2c37;
+}
+
+.btn:active {
+	background-color: #ba2732;
 }
 
 .promo-item h3 {
@@ -964,7 +974,7 @@ p {
 .btn-email {
 	display: block;
   margin-top: 6px;
-  padding: 10px 40px;
+  padding: 10px 60px;
 }
 <!-- ********************************************************************************************* -->
 .modal {
@@ -1378,6 +1388,7 @@ p {
 }
 
 .sort-controls {
+	list-style: none;
 	display: flex;
 	justify-content: space-between;
 }
