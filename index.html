@@ -260,8 +260,7 @@
         </div>
         <div class="contacts">
           <h2 class="contacts-header">Контакты</h2>
-          <!-- Вспомогательный класс -->
-          <p class="mgb30">Вы можете забрать товар сами,
+           <p class="mgb30">Вы можете забрать товар сами,
             <br>заехав в наш офис:</p>
           <a class="map" href="#"><img src="img/map.jpg" alt="map">
           </a>
@@ -275,6 +274,28 @@
         <button class="modal-close" type="button">Закрыть</button>
     </section>
 
+    <section class="write_us">
+      <form class="write_us-form" action="#" method="post">
+          <p class="appointment-item">
+            <label for="appointment-name">Ваше имя:</label>
+            <input id="appointment-name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-phone">Ваш e-mail:</label>
+            <input id="appointment_e-mail" type="email" name="phone" value="" placeholder="Для отправки ответа">
+          </p>
+          <div class="appointment-item">
+            <p>Текст письма:</p>
+            <p><textarea rows="7" cols="62" name="text" placeholder="В свободной форме"></textarea></p>
+          </div>
+          <button class="btn button" type="submit">отправить</button>
+        
+      </form>
+
+      
+        <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
   </main>
 
   <footer class="main-footer">
@@ -282,19 +303,12 @@
       <div class="container">
         <div class="top-menu_wrapper-footer">
 
-          <!-- Не понял почему такое название классов, ведь у тебя в этом блоке просто логотип -->
-            <div id="contacts" class="upper-footer_contacts">
+          
+            <div>
               <a class="logo logo-footer" href="#">Техномарт</a>
             </div>
 
-            <!-- <div class="footer-menu"><a href="#">Компания</a></div>
-            <div class="footer-menu"><a href="#">Новости</a></div>
-            <div class="footer-menu"><a href="catalog.html">Каталог</a></div>
-            <div class="footer-menu"><a href="#shipping">Доставка</a></div>
-            <div class="footer-menu"><a href="#contacts">Контакты</a></div> -->
-
-            <!--Полностью блок переверстываю-->
-              <ul class="footer__menu">
+             <ul class="footer__menu">
                 <li><a href="#">Компания</a></li>
                 <li><a href="#">Новости</a></li>
                 <li><a href="#">Каталог</a></li>
@@ -308,12 +322,6 @@
                   <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                   <br>+7 (812) 555-05-55</p>
               </div>
-
-
-              <!-- <div class="upper-footer_shop-menu"><a href="catalog.html">Материалы</a></div>
-              <div class="upper-footer_shop-menu"><a href="catalog.html">Техника</a></div>
-              <div class="upper-footer_shop-menu"><a href="catalog.html">Инструмент</a></div>
-              <div class="upper-footer_shop-menu"><a href="catalog.html">Спецпредложения</a></div> -->
 
               <ul class="footer__menu footer__menu_catalog">
                 <li><a href="#">Материалы</a></li>
@@ -332,17 +340,12 @@
             <br>Все права защищены</p>
           <div class="social-buttons">
 
-            <!-- Очевидно что тут список -->
             <ul class="social__links">
               <li class="vk"><a href="#">Вконтакте</a></li>
               <li class="fb"><a href="#">Facebook</a></li>
               <li class="in"><a href="#">Instagram</a></li>
             </ul>
 
-            <!-- <a class="btn-social  btn-social--vk" href="http://vk.com">Вконтакте</a>
-            <a class="btn-social  btn-social--fb" href="http://facebook.com">Facebook</a>
-            <a class="btn-social  btn-social--inst" href="http://instagram.com">Instagram</a> -->
-            
           </div>
           <p class="feedback">Обратная связь:
             <br><a class="e-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
