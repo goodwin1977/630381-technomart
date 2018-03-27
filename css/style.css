@@ -210,7 +210,6 @@ p {
 }
 
 .top-menu_order a:active {
-	
 	opacity: 0.5;
 }
 
@@ -1391,6 +1390,8 @@ p {
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
+	margin: 0;
+	padding: 0;
 }
 
 .catalog_paginator ul {
@@ -1533,4 +1534,71 @@ p {
   text-align: right;
 }
 
-
+.account-name {
+	background-color: #fff;
+}
+.account-name .user {
+	display: inline-block;
+  padding: 10px 0;
+  font-size: 21px;
+  color: #000;
+	margin-right: 70px;
+	position: relative;
+}
+.account-name .user::before {
+	content: "";
+	width: 20px;
+	height: 18px;
+	position: absolute;
+	background-image: url('../img/icon-user.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	left: -30px;
+  top: 13px;
+}
+.account-name .user::after {
+	content: "";
+	width: 20px;
+	height: 17px;
+	position: absolute;
+	background-image: url('../img/icon-logout.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	right: -59px;
+  top: 13px;
+}
+.account-menu {
+	text-align: left;
+	padding-top: 7px;
+}
+.account-menu a {
+	font-size: 16px;
+	color: #32425c;
+	text-decoration: underline;
+}
+.user-orders {
+	margin-left: 18px;
+	margin-right: 28px;
+	position: relative;
+}
+.user-orders::after {
+	content: "";
+	width: 4px;
+	height: 4px;
+	background-color: #32425c;
+	position: absolute;
+	right: -19px;
+	border-radius: 50%;
+	top: 7px;
+}
+.main-header_catalog {
+	margin-bottom: 20px;
+}
+.side-topbar__title {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin: 0;
+  line-height: 13px;
+	margin-right: 138px;
+}

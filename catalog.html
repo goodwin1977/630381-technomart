@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header main-header_catalog">
 	     <div class="top-menu">
         <div class="container">
           <div class="top-menu_wrapper">
@@ -41,8 +41,10 @@
 	                        <div class="account-name">
 	                           <a class="user" href="#">Равшан Джамшутович</a>
                           </div>
-	                        <a class="user-orders" href="#">Мои заказы</a>
-	                        <a class="user-profile" href="#">Личный кабинет</a>
+	                        <div class="account-menu">
+                            <a class="user-orders" href="#">Мои заказы</a>
+                            <a class="user-profile" href="#">Личный кабинет</a>
+                          </div>
 	            
 	            
 	          </div>
@@ -156,20 +158,24 @@
 
       <div class="side-right">
         <div class="side-topbar">
-          <h3 class="side-topbar">Сортировка:</h3>
+          <h3 class="side-topbar__title">Сортировка:</h3>
           <ul class="sort-controls">
-            <li><span class="sort-option  sort-option--active">По цене</span>
+            <li><span class="sort-option  sort-option--active"><a href="#">По цене</a></span>
             </li>
             <li><a class="sort-option" href="#">По типу</a>
             </li>
             <li><a class="sort-option" href="#">По функционалу</a>
             </li>
-            <li>
+            <!-- <li>
               <div class="sorting-arrows">
                 <span class="sort-down  sort-down--active">По убыванию</span>
                 <a class="sort-up  sort-u--active" href="#">По возрастанию</a>
               </div>
-            </li>
+            </li> -->
+            <div class="sorting-arrows">
++             <span class="sort-down  sort-down--active">По убыванию</span>
++             <a class="sort-up  sort-u--active" href="#">По возрастанию</a>
++           </div>
           </ul>
         </div>
 
@@ -311,18 +317,10 @@
       <div class="container">
         <div class="top-menu_wrapper-footer">
 
-          <!-- Не понял почему такое название классов, ведь у тебя в этом блоке просто логотип -->
-            <div id="contacts" class="upper-footer_contacts">
+            <div>
               <a class="logo logo-footer" href="#">Техномарт</a>
             </div>
 
-            <!-- <div class="footer-menu"><a href="#">Компания</a></div>
-            <div class="footer-menu"><a href="#">Новости</a></div>
-            <div class="footer-menu"><a href="catalog.html">Каталог</a></div>
-            <div class="footer-menu"><a href="#shipping">Доставка</a></div>
-            <div class="footer-menu"><a href="#contacts">Контакты</a></div> -->
-
-            <!--Полностью блок переверстываю-->
               <ul class="footer__menu">
                 <li><a href="#">Компания</a></li>
                 <li><a href="#">Новости</a></li>
@@ -337,12 +335,6 @@
                   <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                   <br>+7 (812) 555-05-55</p>
               </div>
-
-
-              <!-- <div class="upper-footer_shop-menu"><a href="catalog.html">Материалы</a></div>
-              <div class="upper-footer_shop-menu"><a href="catalog.html">Техника</a></div>
-              <div class="upper-footer_shop-menu"><a href="catalog.html">Инструмент</a></div>
-              <div class="upper-footer_shop-menu"><a href="catalog.html">Спецпредложения</a></div> -->
 
               <ul class="footer__menu footer__menu_catalog">
                 <li><a href="#">Материалы</a></li>
@@ -361,18 +353,13 @@
             <br>Все права защищены</p>
           <div class="social-buttons">
 
-            <!-- Очевидно что тут список -->
             <ul class="social__links">
               <li class="vk"><a href="#">Вконтакте</a></li>
               <li class="fb"><a href="#">Facebook</a></li>
               <li class="in"><a href="#">Instagram</a></li>
             </ul>
 
-            <!-- <a class="btn-social  btn-social--vk" href="http://vk.com">Вконтакте</a>
-            <a class="btn-social  btn-social--fb" href="http://facebook.com">Facebook</a>
-            <a class="btn-social  btn-social--inst" href="http://instagram.com">Instagram</a> -->
-            
-          </div>
+         </div>
           <p class="feedback">Обратная связь:
             <br><a class="e-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
