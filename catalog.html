@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header main-header_catalog">
 	     <div class="top-menu">
         <div class="container">
           <div class="top-menu_wrapper">
@@ -41,10 +41,10 @@
 	                        <div class="account-name">
 	                           <a class="user" href="#">Равшан Джамшутович</a>
                           </div>
-	                        <a class="user-orders" href="#">Мои заказы</a>
-	                        <a class="user-profile" href="#">Личный кабинет</a>
-	            
-	            
+													<div class="account-menu">
+														<a class="user-orders" href="#">Мои заказы</a>
+		                        <a class="user-profile" href="#">Личный кабинет</a>
+													</div>
 	          </div>
 	        </div>
 
@@ -93,7 +93,7 @@
         <div class="left-sidebar">
           <h3 class="side-topbar">Фильтр:</h3>
           <form class="side-left">
-            
+
             <fieldset class="filter-item">
         <legend>цена:</legend>
         <div class="range-filter">
@@ -155,20 +155,25 @@
 
       <div class="side-right">
         <div class="side-topbar">
-          <h3 class="side-topbar">Сортировка:</h3>
+          <h3 class="side-topbar__title">Сортировка:</h3>
           <ul class="sort-controls">
-            <li><span class="sort-option  sort-option--active">По цене</span>
+            <li><span class="sort-option  sort-option--active"><a href="#">По цене</a></span>
             </li>
             <li><a class="sort-option" href="#">По типу</a>
             </li>
             <li><a class="sort-option" href="#">По функционалу</a>
             </li>
-            <li>
+            <!-- <li>
               <div class="sorting-arrows">
                 <span class="sort-down  sort-down--active">По убыванию</span>
                 <a class="sort-up  sort-u--active" href="#">По возрастанию</a>
               </div>
-            </li>
+            </li> -->
+
+						<div class="sorting-arrows">
+							<span class="sort-down  sort-down--active">По убыванию</span>
+							<a class="sort-up  sort-u--active" href="#">По возрастанию</a>
+						</div>
           </ul>
         </div>
 
@@ -265,7 +270,7 @@
             <div class="price">25 500 P.</div>
           </div>
           <div class="catalog-item">
-            
+
             <div class="actions">
               <a href="#" class="buy">Купить</a>
               <a href="#" class="bookmark">В закладки</a>
@@ -370,7 +375,7 @@
             <!-- <a class="btn-social  btn-social--vk" href="http://vk.com">Вконтакте</a>
             <a class="btn-social  btn-social--fb" href="http://facebook.com">Facebook</a>
             <a class="btn-social  btn-social--inst" href="http://instagram.com">Instagram</a> -->
-            
+
           </div>
           <p class="feedback">Обратная связь:
             <br><a class="e-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
@@ -382,6 +387,6 @@
       </div>
     </div>
   </footer>
-  
+
 </body>
 </html>
