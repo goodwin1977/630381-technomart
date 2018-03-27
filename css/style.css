@@ -975,7 +975,7 @@ p {
   margin-top: 6px;
   padding: 10px 60px;
 }
-/* ********************************************************************************************* */
+/* ******************************КАРТА**************************************** */
 
 .modal {
 	
@@ -1051,7 +1051,7 @@ p {
 	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7),
 				inset 0 -100px 0 0 #f4f4f4;
 	z-index: 25;
-	border-top: 3px solid #ff5257;
+	border-top: 5px solid #ff5257;
 	
 }
 
@@ -1079,7 +1079,7 @@ p {
 }
 
 .mail textarea {
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 	padding: 15px;
 }
 
@@ -1098,12 +1098,13 @@ p {
  	display: block;
  	width: 100%;
  	border-radius: 3px;
+ 	border: 0 none;
  }
 
 
 
 
-
+/* --------------------------------------------------------------------------- */
 
 
 
@@ -1673,4 +1674,62 @@ p {
 	margin: 0;
   line-height: 13px;
 	margin-right: 138px;
+}
+
+/* ----------------------------ФОРМА ПОКУПКИ --------------------------------- */
+
+.popup-ok {
+	position: fixed;
+	box-sizing: border-box;
+	top: 50%;
+	left: 50%;
+	width: 620px;
+	height: 275px;
+	margin-top: -137px;
+	margin-left: -310px;
+	background-color: #ffffff;
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7),
+				inset 0 -100px 0 0 #f4f4f4;
+	z-index: 25;
+	border-top: 5px solid #ff5257;
+	
+}
+
+.popup-ok h2 {
+	text-transform: none;
+	text-align: center;
+	margin-top: 75px;
+	margin-bottom: 95px;
+	position: relative;
+}
+
+.popup-ok h2::before {
+	position: absolute;
+	content: '';
+	width: 66px;
+	height: 66px;
+	background-image: url('../img/ok.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	left: 70px;
+	top: -10px;
+	z-index: 26;
+}
+
+.btn-popup {
+	width: 460px;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 85px;
+
+}
+
+.btn-popup-ok {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.btn-popup-order {
+	background-color: #ffffff;
+	color: #000000;
 }
