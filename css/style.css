@@ -1076,19 +1076,17 @@ p {
 }
 
 .modal {
-
 	display: none;
-
 	position: fixed;
 	color: #000000;
 	background-color: #565656;
 	-webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 	        box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
+
 .modal-show {
   display: block;
   animation: move 0.6s;
-
 }
 
 .modal-map {
@@ -1155,7 +1153,6 @@ p {
 .modal-close::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-
 }
 /*  **************************************************ФОРМА ОТПРАВКИ******************  */
 
@@ -1214,7 +1211,6 @@ p {
 
 .write_us-form p {
 	font-size: 18px;
-
 }
 
 .appointment-item input {
@@ -1604,12 +1600,10 @@ p {
 	float: left;
 }
 
-
 .sort-controls li {
 	display: inline-block;
 	margin-right: 64px;
 }
-
 .sort-controls li.last {
 	margin-right: 0;
 }
@@ -1647,7 +1641,6 @@ p {
 .catalog_paginator ul li span,
 .catalog_paginator ul li a {
 	display: inline-block;
-
 }
 
 .page-button {
@@ -2021,5 +2014,4 @@ p {
 }
 .btn-filter:hover {
 	color: #fff;
-
 }
