@@ -1826,6 +1826,7 @@ p {
 .account-name {
 	background-color: #fff;
 }
+
 .account-name .user {
 	display: inline-block;
   padding: 10px 0;
@@ -1839,23 +1840,34 @@ p {
 	width: 20px;
 	height: 18px;
 	position: absolute;
-	background-image: url('../img/icon-user.png');
+	background-image: url('../img/icon-user-hover.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	left: -30px;
   top: 13px;
+  opacity: 0.3;
 }
 .account-name .user::after {
 	content: "";
 	width: 20px;
 	height: 17px;
 	position: absolute;
-	background-image: url('../img/icon-logout.png');
+	background-image: url('../img/-icon-logout-hover.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	right: -59px;
   top: 13px;
+  opacity: 0.3;
 }
+
+.account-name .user:hover::after, .user:hover::before {
+	opacity: 1;
+}
+
+.account-name a:hover {
+	color: #000000;
+}
+
 .account-menu {
 	text-align: left;
 	padding-top: 7px;
