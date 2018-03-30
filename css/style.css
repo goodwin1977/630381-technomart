@@ -78,6 +78,14 @@ p {
 	height: 100%;
 }
 
+.logo:hover {
+	background-color: #ca2c37;
+}
+
+.logo:active {
+	background-color: #ba2732;
+}
+
 .logo::after {
 	content: '';
     position: absolute;
@@ -899,7 +907,7 @@ p {
 	height: 250px;
 	right: 0;
 	top: -20px;
-	background-image: url('../img/service-menu-shadow.png');
+	background-image: url('../img/service-menu_shadow.png');
 	background-repeat: no-repeat;
 }
 
@@ -910,7 +918,7 @@ p {
 	height: 261px;
 	left: 200px;
 	top: 45px;
-	background-image: url('../img/service-slide01.png');
+	background-image: url('../img/service_slide01.png');
 	background-repeat: no-repeat;
 }
 
@@ -921,7 +929,7 @@ p {
 	height: 261px;
 	left: 200px;
 	top: 45px;
-	background-image: url('../img/service-slide02.png');
+	background-image: url('../img/service_slide02.png');
 	background-repeat: no-repeat;
 }
 
@@ -932,7 +940,7 @@ p {
 	height: 261px;
 	left: 200px;
 	top: 45px;
-	background-image: url('../img/service-slide03.png');
+	background-image: url('../img/service_slide03.png');
 	background-repeat: no-repeat;
 }
 
