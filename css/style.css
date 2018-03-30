@@ -99,6 +99,7 @@ p {
 .top-menu-search {
 	position: relative;
 	display: inline-block;
+	vertical-align: middle;
 	margin-right: 20px;
 	height: 100%;
 }
@@ -318,6 +319,7 @@ p {
 
 .login {
 	display: inline-block;
+	vertical-align: top;
 	font-size: 21px;
 	color: #000000;
 	background-color: #fff;
@@ -327,6 +329,7 @@ p {
 
 .login-icon {
 	display: inline-block;
+	vertical-align: top;
 	width: 20px;
 	height: 17px;
 	background-image: url('../img/icon-login.png');
@@ -341,6 +344,7 @@ p {
 
 .registration {
 	display: inline-block;
+	vertical-align: top;
 	font-size: 21px;
 	color: #000000;
 	padding: 11px 24px;
@@ -380,6 +384,7 @@ p {
 	color: #ffffff;
 	padding: 21px 31px;
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .lower-menu-menu li:hover {
@@ -455,6 +460,7 @@ p {
 
 .page-btn {
 	display: inline-block;
+	vertical-align: middle;
 	width: 7px;
 	height: 7px;
 	margin: 0 5px;
@@ -665,6 +671,7 @@ p {
     width:218px;
 	font-weight:bold;
 	text-align:center;
+	vertical-align: middle;
 	margin-bottom: 20px;
 }
 
@@ -946,6 +953,7 @@ p {
 
 .btn-slide-credit {
 	display: inline-block;
+	vertical-align: middle;
 	margin-top: 20px;
 	margin-left: 50px;
 }
@@ -1022,6 +1030,7 @@ p {
 
 .btn-about {
 	display: inline-block;
+	vertical-align: middle;
 	padding: 10px 40px;
 }
 
@@ -1311,6 +1320,7 @@ p {
 	position: relative;
 	height: auto;
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .footer--menu {
@@ -1321,6 +1331,7 @@ p {
 
 .footer--menu li {
 	display: inline-block;
+	vertical-align: bottom;
 	margin-left: 55px;
 }
 
@@ -1446,11 +1457,13 @@ p {
 
 .social--links li {
 	display: inline-block;
+	vertical-align: middle;
 	margin: 0 3px;
 }
 
 .social--links li a {
 	display: inline-block;
+	vertical-align: middle;
 	width: 40px;
 	height: 40px;
 	background-color: #212a3a;
@@ -1523,6 +1536,7 @@ p {
 .breadcrumbs li {
 	list-style: none;
 	display: inline-block;
+	vertical-align: middle;
 	color: #000000;
 	font-size: 13px;
 	font-weight: 400;
@@ -1639,6 +1653,7 @@ p {
 
 .sort-controls li {
 	display: inline-block;
+	vertical-align: middle;
 	margin-right: 64px;
 }
 
@@ -1651,6 +1666,7 @@ p {
 	font-family: 'PTSans', sans-serif;
 	color: #acaaa5;
 	display: inline-block;
+	vertical-align: middle;
 	border-bottom: 1px dotted #ee3643;
 }
 .sort-controls li .sort-option--active a {
@@ -1676,11 +1692,13 @@ p {
 
 .catalog-paginator ul li {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .catalog-paginator ul li span,
 .catalog-paginator ul li a {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .page-button {
@@ -1803,6 +1821,7 @@ p {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
@@ -1829,6 +1848,7 @@ p {
 
 .account-name .user {
 	display: inline-block;
+	vertical-align: middle;
 	padding: 10px 0;
 	font-size: 21px;
 	color: #000;
@@ -1983,6 +2003,7 @@ p {
 
 .sort-down  {
 	display: inline-block;
+	vertical-align: middle;
 	border-bottom: 10px solid #ee3643;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
@@ -1993,6 +2014,7 @@ p {
 
 .sort-up {
 	display: inline-block;
+	vertical-align: middle;
 	border-top: 10px solid #c5c5c5;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
@@ -2013,6 +2035,7 @@ p {
 
 .checkbox-style {
 	display: inline-block;
+	vertical-align: top;
 	width: 23px;
 	height: 23px;
 	background-image: url('../img/checkbox-off.png');
@@ -2048,6 +2071,7 @@ p {
 
 .radio-style {
 	display: inline-block;
+	vertical-align: top;
 	width: 25px;
 	height: 25px;
 	background-image: url('../img/radio-off.png');
