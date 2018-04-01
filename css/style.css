@@ -1629,6 +1629,10 @@ p {
 	margin-bottom: 75px;
 }
 
+.side-right {
+	width: 700px;
+}
+
 .side-topbar {
 	margin: 0;
 	font-family: 'OpenSans', sans-serif;
