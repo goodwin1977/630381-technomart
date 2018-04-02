@@ -150,7 +150,7 @@ p {
 .bookmarks-icon {
 	width: 14px;
 	height: 16px;
-	background-image: url('../img/icon-bookmark-hover.png');
+	background-image: url('../img/icon-bookmark.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-right: 15px;
@@ -187,7 +187,7 @@ p {
 .basket-icon {
 	width: 15px;
 	height: 15px;
-	background-image: url('../img/cart-icon2.png');
+	background-image: url('../img/icon-cart.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-right: 15px;
@@ -297,7 +297,7 @@ p {
 .phone-icon {
 	width: 19px;
 	height: 19px;
-	background-image: url('../img/icon-phone.png');
+	background-image: url('../img/icon-phone.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-right: 40px;
@@ -332,7 +332,7 @@ p {
 	vertical-align: top;
 	width: 20px;
 	height: 17px;
-	background-image: url('../img/icon-login.png');
+	background-image: url('../img/icon-login.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-right: 9px;
@@ -432,7 +432,7 @@ p {
 	position: absolute;
 	top: 115px;
 	left: 30px;
-	background-image: url('../img/icon-left.png');
+	background-image: url('../img/icon-left.svg');
 	background-repeat: no-repeat;
 	width: 28px;
 	height: 44px;
@@ -443,7 +443,7 @@ p {
 	position: absolute;
 	top: 115px;
 	right: 13px;
-	background-image: url('../img/icon-right.png');
+	background-image: url('../img/icon-right.svg');
 	background-repeat: no-repeat;
 	width: 28px;
 	height: 44px;
@@ -530,7 +530,7 @@ p {
 }
 
 .materials {
-	background: #ffbf47 url("../img/icon-1.png") no-repeat 213px 30px;
+	background: #ffbf47 url("../img/icon-1.svg") no-repeat 213px 30px;
 
 }
 
@@ -561,7 +561,7 @@ p {
 }
 
 .instruments {
-	background: #3bbce3 url("../img/icon-2.png") no-repeat 195px 34px;
+	background: #3bbce3 url("../img/icon-2.svg") no-repeat 195px 34px;
 }
 
 .instruments-info {
@@ -577,7 +577,7 @@ p {
 }
 
 .machines {
-	background: #dc91d8 url("../img/icon-3.png") no-repeat 190px 50%;
+	background: #dc91d8 url("../img/icon-3.svg") no-repeat 190px 50%;
 }
 
 .machines-info {
@@ -593,7 +593,7 @@ p {
 }
 
 .discount {
-	background: #8ed78f url("../img/icon-4.png") no-repeat 195px 50%;
+	background: #8ed78f url("../img/icon-4.svg") no-repeat 195px 50%;
 }
 
 .discount-info {
@@ -609,7 +609,7 @@ p {
 }
 
 .delivery {
-	background: #ffc047 url("../img/icon-5.png") no-repeat 190px 50%;
+	background: #ffc047 url("../img/icon-5.svg") no-repeat 190px 50%;
 	margin-bottom: 0;
 }
 
@@ -1471,19 +1471,19 @@ p {
 }
 
 .vk a {
-	background-image: url('../img/vk-icon.png');
+	background-image: url('../img/icon-vk.svg');
 	background-repeat: no-repeat;
 	background-position: 50%;
 }
 
 .fb a {
-	background-image: url('../img/fb-icon.png');
+	background-image: url('../img/icon-fb.svg');
 	background-repeat: no-repeat;
 	background-position: 50%;
 }
 
 .in a {
-	background-image: url('../img/insta-icon.png');
+	background-image: url('../img/icon-insta.svg');
 	background-repeat: no-repeat;
 	background-position: 50%;
 }
@@ -1558,7 +1558,7 @@ p {
 	top: 3px;
 	width: 20px;
 	height: 20px;
-	background-image: url('../img/icon-home.png');
+	background-image: url('../img/icon-home.svg');
 	background-repeat: no-repeat;
 }
 
@@ -1969,7 +1969,7 @@ p {
 	content: '';
 	width: 66px;
 	height: 66px;
-	background-image: url('../img/ok.png');
+	background-image: url('../img/form-1.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	left: 70px;
@@ -2002,29 +2002,42 @@ p {
 	font-size: 0;
 	float: right;
 	width: 43px;
-	position: relative;
+	
 }
 
 .sort-down  {
 	display: inline-block;
 	vertical-align: middle;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.sort-down::before {
+	content: '';
+	position: absolute;
 	border-bottom: 10px solid #ee3643;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-	position: absolute;
-	left: 0;
-	top: -18px;
+	top: 0;
+	left: -20px;
 }
 
 .sort-up {
 	display: inline-block;
 	vertical-align: middle;
+	position: relative;
+	
+}
+
+.sort-up::after {
+	content: '';
+	position: absolute;
 	border-top: 10px solid #c5c5c5;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-	position: absolute;
-	right: 0;
-	bottom: -28px;
+	top: 0;
+	right: -20px;
 }
 
 .makers {
@@ -2042,14 +2055,14 @@ p {
 	vertical-align: top;
 	width: 23px;
 	height: 23px;
-	background-image: url('../img/checkbox-off.png');
+	background-image: url('../img/checkbox-off.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-right: 10px;
 }
 
 .checkbox input:checked + label .checkbox-style {
-	background-image: url('../img/checkbox-on.png');
+	background-image: url('../img/checkbox-on.svg');
 }
 
 .checkbox label {
@@ -2078,14 +2091,14 @@ p {
 	vertical-align: top;
 	width: 25px;
 	height: 25px;
-	background-image: url('../img/radio-off.png');
+	background-image: url('../img/radio-off.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-right: 10px;
 }
 
 .checkbox input:checked + label .radio-style {
-	background-image: url('../img/radio-on.png');
+	background-image: url('../img/radio-on.svg');
 }
 
 .power-type h3 {
