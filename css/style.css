@@ -319,7 +319,7 @@ p {
 
 .login {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	font-size: 21px;
 	color: #000000;
 	background-color: #fff;
@@ -329,7 +329,7 @@ p {
 
 .login-icon {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	width: 20px;
 	height: 17px;
 	background-image: url('../img/icon-login.svg');
@@ -1269,8 +1269,9 @@ p {
 }
 
 .mail textarea {
-	margin-bottom: 50px;
+	margin-bottom: 15px;
 	padding: 15px;
+	width: 425px;
 }
 
 .write-us-form p {
@@ -1678,6 +1679,11 @@ p {
 .sort-controls li .sort-option--active a {
 	color: #ee3643;
 	border-bottom: 1px dotted transparent;
+}
+
+.sort-option:hover {
+	color: #000000;
+
 }
 
 .btn-filter {
